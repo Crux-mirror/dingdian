@@ -1,17 +1,11 @@
-#小说名
-//*[@id="content"]/dd[1]/table/tbody/tr/td[1]/a
-#小说url
-//*[@id="content"]/dd[1]/table/tbody/tr/td[1]/a/@href
-#目录url
-//*[@id="content"]/dd[2]/div[2]/p[3]/a[1]/@href
-#章节名
-//*[@id="at"]/tbody/tr/td/a
-#章节url
-//*[@id="at"]/tbody/tr/td/a/@href
-#小说类别
-//*[@id="at"]/tbody/tr[1]/td[1]/a
-#作者
-//*[@id="at"]/tbody/tr[1]/td[2]
-#状态
-//*[@id="at"]/tbody/tr[1]/td[3]
-
+## v1.0
+>   顶点小说爬虫基础版本
+#### 功能
+*   存储mongodb
+*   redis去重与增量爬取
+*   章节次序爬取
+#### 缺陷
+*   服务器内存限制，设置爬取数量为400本，而目前顶点小说数量大约为34000本
+*   小说简介中的时间更新暂无解决
+*   同步爬取多本小说，不能一本一本的爬取
+*   mongodb不熟练 后期可能会存在的其他缺陷
